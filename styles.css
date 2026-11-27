@@ -1,0 +1,386 @@
+
+/* Estilo general */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1e293b;
+  text-align: center;
+  line-height: 1.6;
+  background: #f8fbff;
+}
+
+/* Barra de navegación */
+.topbar {
+  background: linear-gradient(110deg, #0b4f8a, #1683c5);
+  color: white;
+  padding: 18px max(24px, calc((100% - 1120px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 14px rgba(15, 75, 125, 0.18);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+}
+
+.section-inner {
+  max-width: 920px;
+  margin: auto;
+}
+
+h2 {
+  display: inline-block;
+  padding: 8px 22px;
+  font-size: 30px;
+  margin-bottom: 14px;
+  color: white;
+  background: #4a9bd6;
+  border-radius: 12px;
+}
+
+.intro {
+  color: #64748b;
+}
+
+/* Sobre mí */
+#sobre-mi {
+  background: linear-gradient(180deg, #ffffff, #f3f8fd);
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.about-card {
+  padding: 30px;
+  background: white;
+  border: 1px solid #d7e8f7;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(34, 91, 137, 0.09);
+}
+
+.hello {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.about-card h3 {
+  margin-top: 0;
+  color: #123b62;
+  font-size: 21px;
+}
+
+/* Proyectos */
+#proyectos {
+  background: #edf5fc;
+}
+
+#proyectos .section-inner {
+  max-width: 1200px;
+}
+
+#proyectos h2 {
+  font-size: 36px;
+}
+
+#proyectos .intro {
+  font-size: 18px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 30px auto 0;
+}
+
+.project-card {
+  display: block;
+  background: white;
+  border: 1px solid #d7e8f7;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 12px 30px rgba(22, 72, 113, 0.1);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(22, 72, 113, 0.16);
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 26px;
+}
+
+.project-info h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+
+.project-info p {
+  color: #64748b;
+  margin: 0 0 18px;
+  font-size: 16px;
+}
+
+.project-link {
+  color: #104d80;
+  font-weight: bold;
+}
+
+/* Contactos */
+#contactos {
+  background: #ffffff;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(320px, 1.2fr);
+  gap: 22px;
+  align-items: stretch;
+  max-width: 850px;
+  margin: 25px auto;
+  text-align: left;
+}
+
+.linkedin-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 28px;
+  color: #123b62;
+  text-align: left;
+  text-decoration: none;
+  background: #edf6fd;
+  border: 1px solid #d5e8f7;
+  border-radius: 15px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.linkedin-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(22, 72, 113, 0.12);
+}
+
+.linkedin-card span:last-child {
+  display: grid;
+}
+
+.linkedin-card small {
+  margin-top: 4px;
+  color: #647d92;
+}
+
+.linkedin-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  background: #0a66c2;
+  border-radius: 10px;
+}
+
+.contact-card {
+  margin: 0;
+  padding: 25px;
+  background: #f7fbff;
+  border: 1px solid #dceaf5;
+  border-radius: 15px;
+  box-shadow: 0 10px 24px rgba(34, 91, 137, 0.07);
+}
+
+.contact-card a {
+  color: #104d80;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 18px;
+  color: white !important;
+  background: #1769aa;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-button:hover {
+  background: #104d80;
+}
+
+/* Pie de página */
+footer {
+  background: #0b4f8a;
+  color: white;
+  padding: 20px;
+}
+
+.project-detail {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 70px;
+  text-align: left;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #104d80;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.project-detail h1 {
+  margin: 0 0 22px;
+  color: #123b62;
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.2;
+}
+
+.detail-image {
+  display: block;
+  width: 100%;
+  max-height: 460px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(22, 72, 113, 0.14);
+}
+
+.detail-section {
+  margin-top: 30px;
+  padding: 24px 28px;
+  background: white;
+  border: 1px solid #d7e8f7;
+  border-radius: 15px;
+}
+
+.detail-section h2 {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.detail-section ul {
+  margin-bottom: 0;
+  padding-left: 22px;
+}
+
+.detail-section li {
+  margin: 9px 0;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 620px) {
+  .topbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .topbar {
+    padding: 18px 15px;
+  }
+
+  section {
+    padding: 45px 15px;
+  }
+
+  .project-info {
+    padding: 20px;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail {
+    padding: 22px;
+  }
+
+  .detail-section {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
