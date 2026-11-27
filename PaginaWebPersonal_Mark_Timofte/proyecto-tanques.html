@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detalles del proyecto Duelo local de tanques de Mark Timofte.">
+  <title>Duelo local de tanques | Mark Timofte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <p class="brand">Mi portafolio</p>
+    <nav aria-label="Navegación principal">
+      <a href="index.html#sobre-mi">Sobre mí</a>
+      <a href="index.html#proyectos">Mis proyectos</a>
+      <a href="index.html#contactos">Contactos</a>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <a class="back-link" href="index.html#proyectos">← Volver a mis proyectos</a>
+    <h1>Duelo local de tanques</h1>
+    <img class="detail-image" src="Imagenes/proyecto1.png" alt="Partida del proyecto de duelo local de tanques">
+
+    <section class="detail-section">
+      <h2>Sobre el proyecto</h2>
+      <p>Juego multijugador local en el que cada jugador controla un tanque. Los disparos se cargan antes de lanzar proyectiles con física; las explosiones aplican daño y empuje, y la cámara sigue la partida.</p>
+    </section>
+
+    <section class="detail-section">
+      <h2>Mecánicas que he aprendido</h2>
+      <ul>
+        <li>Controlar dos tanques con entradas independientes y físicas de Rigidbody.</li>
+        <li>Crear disparos cargables, proyectiles y explosiones con daño en área.</li>
+        <li>Programar vida, rondas, ganador y reaparición de jugadores.</li>
+        <li>Ajustar la cámara según la distancia entre los jugadores.</li>
+        <li>Integrar efectos de sonido y partículas.</li>
+      </ul>
+    </section>
+
+    <section class="detail-section">
+      <h2>Problemas y soluciones</h2>
+      <ul>
+        <li><strong>La cámara podía dejar a un jugador fuera de pantalla:</strong> la adapté para que tuviera en cuenta la distancia entre los dos tanques.</li>
+        <li><strong>Los disparos necesitaban fuerza variable:</strong> añadí una fase de carga antes del lanzamiento del proyectil para controlar su potencia.</li>
+        <li><strong>El impacto debía afectar a los tanques cercanos:</strong> utilicé daño en área y empuje para que las explosiones influyeran en la partida.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Mi Portafolio - Todos los derechos reservados</p></footer>
+</body>
+</html>
